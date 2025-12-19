@@ -1,0 +1,86 @@
+/* Full page wrapper */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF7A8; /* soft yellow */
+  padding: 20px;
+}
+
+/* Login card box */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Heading */
+.login-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2d6a4f; /* rich organic green */
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.login-sub {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* error text */
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Form inputs */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1.5px solid #a3b18a; /* earthy border */
+  background: #f9ffe0; /* light yellow tint */
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #2d6a4f;
+  background: #ffffff;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2d6a4f; /* green */
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #1b4f38;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

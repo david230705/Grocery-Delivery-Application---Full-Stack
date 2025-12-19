@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Outer main yellow background */
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #ffea54; /* Bold organic yellow */
+  background-attachment: fixed;
+}
+
+/* Optional gradient upgrade — uncomment to use */
+/*
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #ffeb3b, #ffd500, #ffca28);
+  background-attachment: fixed;
+}
+*/
+
+/* Center container */
+.app {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  padding-bottom: 30px;
+
+  /* ✅ Remove white background so yellow shows */
+  background: transparent;
+
+  /* Optional card effect look — activate if you want section cards, not full white page */
+  /* background: rgba(255,255,255,0.9);
+  border-radius: 18px;
+  box-shadow: 0px 10px 35px rgba(0,0,0,0.12); */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fadeIn {
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
